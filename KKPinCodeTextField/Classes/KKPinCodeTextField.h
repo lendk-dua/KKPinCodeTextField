@@ -1,9 +1,9 @@
 //
 //  KKPinCodeTextField.h
-//  KolesaKz
+//  KKPinCodeTextField
 //
 //  Created by Amirzhan on 30.06.17.
-//  Copyright © 2017 Eugene Valeyev. All rights reserved.
+//  Copyright © 2018 KOLESA GROUP. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
