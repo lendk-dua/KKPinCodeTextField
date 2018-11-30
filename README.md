@@ -48,12 +48,12 @@ KKPinCodeTextField *textField = [[KKPinCodeTextField alloc] initWithFrame:frame]
 
 ## Author
 
-Amirzhan, idryshev@kolesa.kz
+[Amirzhan](https://github.com/iamirzhan), idryshev@kolesa.kz
 
 ## Contributing
 
-Bug reports and pull requests are welcome
+If you have a question, find a bug, or just want to say hi, please open an [issue on GitHub](https://github.com/kolesa-teeam/ios_pinCodeTextField/issues/new)
 
 ## License
 
-KKPinCodeTextField is available under the MIT License. See the [LICENSE](./LICENSE) file for more info.
+`KKPinCodeTextField` is available under the MIT License. See the [LICENSE](./LICENSE) file for more info.
