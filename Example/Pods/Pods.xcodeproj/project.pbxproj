@@ -7,108 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		128B50C3BA48E3790FC2E173DABC8819 /* Pods-KKPinCodeTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E585403498517F16EC0FA3DF1387633 /* Pods-KKPinCodeTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30AA9DF2EC78C1A576B30C53DD02AE7D /* Pods-KKPinCodeTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C68C2B6001F56500A3C6C616DE99E3B7 /* Pods-KKPinCodeTextField_Tests-dummy.m */; };
-		5CA054490D82DAB4283736E8ADAC600B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		5CABD4B95B55CF10AC831978952A9FB1 /* KKPinCodeTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4697B2E5FDE9466EA3974B7C8339F9 /* KKPinCodeTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63B44CE7D79929402C723D8D7A1AA0A4 /* Pods-KKPinCodeTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30ECB0249D6160FEBC2F713E6E8DB85A /* Pods-KKPinCodeTextField_Example-dummy.m */; };
-		8CF0EC4E5DB8ADCDB4115AC110EB19AD /* KKPinCodeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = AF83CA3BEE9ABEEE8A8F22C89497BDB6 /* KKPinCodeTextField.m */; };
-		A4814FB125C06E0B0FEF45F5AD1FD202 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CB34F0F37963B7EEB16A6F3746F98FD8 /* Pods-KKPinCodeTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A85480E018855BE6D4EC9B33585F44 /* Pods-KKPinCodeTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEFC0927603CB0727616C1FF550DC391 /* KKPinCodeTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3944A449A28FEC2571E00F03009C6E0A /* KKPinCodeTextField-dummy.m */; };
-		CFC9E71A7BAAF727E1A9B1D72E913D8F /* KKPinCodeTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E1398B65B3E8AACF91CE250D2F109BA /* KKPinCodeTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEEF5626D3EF5FA3134A6B266738C7F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2E0260D4005EDCF0478278CFC6C633B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		2E6A410100BB1C582AE5A3B4E020F1B9 /* KKPinCodeTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E552C8EDD57E25854E1737A7C77E1D56 /* KKPinCodeTextField-dummy.m */; };
+		3828F35079486E7407D757CB700E526F /* Pods-KKPinCodeTextField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 914859D1F01867F60E402CEB647809C8 /* Pods-KKPinCodeTextField_Tests-dummy.m */; };
+		50E36D9C74A7CE4EE98EBD118B75568F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		55703BCC5B914CC7DBF15C0D86BC6E71 /* Pods-KKPinCodeTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A606C9ECB116C213C1F07F2A9D68D09 /* Pods-KKPinCodeTextField_Example-dummy.m */; };
+		A827E80A9E443535977EC3DDAA51DCA5 /* Pods-KKPinCodeTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4043C78A1E6F2FADC1DE9C833C79264 /* Pods-KKPinCodeTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0396FAC16AD0B3DEAF0FD39313BEB62 /* Pods-KKPinCodeTextField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B972F201B199154E07C0033C790925E9 /* Pods-KKPinCodeTextField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF28E6F87A4F2917ACE05600666990DC /* KKPinCodeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F70712A12EACA4264E518E8B92A93B2 /* KKPinCodeTextField.m */; };
+		E8CE3736913A6541B5B0E49EE599EC2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		EB4A625841A6E61560A6F27639E68515 /* KKPinCodeTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = DB867B43A0DDC7495BB31639EBBC020A /* KKPinCodeTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F33C38A4872B419296F71C3AC5474241 /* KKPinCodeTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60F7EB17C002C1B608CE13B05954C296 /* KKPinCodeTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F9EE3DAA4D1C14BBF464708BC25ACF45 /* PBXContainerItemProxy */ = {
+		65AC009AED2D220E738893E0AB018849 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F57B34529C51F913C582035C49C0AA7F;
+			remoteGlobalIDString = 6144B865869576FB75039525DB479A7E;
 			remoteInfo = KKPinCodeTextField;
+		};
+		B7214E9979397B15706B4DDF57A80588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191BCADBC1F7B121D1BE7FB96E04FD40;
+			remoteInfo = "Pods-KKPinCodeTextField_Example";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		091A4725F67872C9320D4D4EDB06CD26 /* KKPinCodeTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKPinCodeTextField-prefix.pch"; sourceTree = "<group>"; };
-		0A38BF857816CE7B97DF2DA99ED8D434 /* Pods-KKPinCodeTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
-		0EAC6E49A72C8A6A3C6F8F4B96D6EDA5 /* Pods-KKPinCodeTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKPinCodeTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		27691EAA1CF6AB63F0AA526979A34DCB /* Pods-KKPinCodeTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		28910FB4087596F1A3B32CE3F9280404 /* Pods-KKPinCodeTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2B4697B2E5FDE9466EA3974B7C8339F9 /* KKPinCodeTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKPinCodeTextField.h; path = KKPinCodeTextField/Classes/KKPinCodeTextField.h; sourceTree = "<group>"; };
-		2F293020DA76788B8FDB31ECCEDE15C8 /* Pods-KKPinCodeTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKPinCodeTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		30ECB0249D6160FEBC2F713E6E8DB85A /* Pods-KKPinCodeTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKPinCodeTextField_Example-dummy.m"; sourceTree = "<group>"; };
-		3944A449A28FEC2571E00F03009C6E0A /* KKPinCodeTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKPinCodeTextField-dummy.m"; sourceTree = "<group>"; };
-		45FA1CDBA601BAE3D6E621BBC70BB193 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		4D17A8D06835A554F08F9B9573ADD21B /* KKPinCodeTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KKPinCodeTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5E31E00FF9DEBC514300E05995942A39 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		5F943235A8C7DD02145D82778F2FE21D /* KKPinCodeTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KKPinCodeTextField.modulemap; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		66CB33A04F322F3DDB9C07A74F11531F /* Pods-KKPinCodeTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KKPinCodeTextField_Tests.modulemap"; sourceTree = "<group>"; };
-		6E585403498517F16EC0FA3DF1387633 /* Pods-KKPinCodeTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKPinCodeTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7C0E502A5679F41128E8C7B8C6C3887F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C7C57444A47F4AECD5FD44BA93819BD /* Pods-KKPinCodeTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPinCodeTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C98A559DB43DBD435CCE20084E98DBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8852B1816151EC518C1B55E26C62928F /* KKPinCodeTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KKPinCodeTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A457DBDCC8A90965F771E9D00E9AB04 /* Pods-KKPinCodeTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8E1398B65B3E8AACF91CE250D2F109BA /* KKPinCodeTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKPinCodeTextField-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D8085FE0541F0D0C78CF5010CF90306 /* Pods-KKPinCodeTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Example-resources.sh"; sourceTree = "<group>"; };
-		A50A2A166948CB522A99470307A1A1D5 /* Pods_KKPinCodeTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKPinCodeTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7745398D71871DA3FF1E422AB9B6FA8 /* Pods-KKPinCodeTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AF83CA3BEE9ABEEE8A8F22C89497BDB6 /* KKPinCodeTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKPinCodeTextField.m; path = KKPinCodeTextField/Classes/KKPinCodeTextField.m; sourceTree = "<group>"; };
-		C350B245B257DA7A875E959833445D1E /* Pods-KKPinCodeTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPinCodeTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C68C2B6001F56500A3C6C616DE99E3B7 /* Pods-KKPinCodeTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKPinCodeTextField_Tests-dummy.m"; sourceTree = "<group>"; };
-		C8FB2F738D6CC6D6A58B81326E034E8C /* KKPinCodeTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKPinCodeTextField.xcconfig; sourceTree = "<group>"; };
-		D7EC2743910930086F180B3479B6AF9F /* Pods-KKPinCodeTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E0E5A3781C1A3D4D33B1648F39EB2834 /* Pods_KKPinCodeTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KKPinCodeTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E49D0D3E6D115295A4EC280B0D41EAAE /* Pods-KKPinCodeTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KKPinCodeTextField_Example.modulemap"; sourceTree = "<group>"; };
-		F1A85480E018855BE6D4EC9B33585F44 /* Pods-KKPinCodeTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKPinCodeTextField_Example-umbrella.h"; sourceTree = "<group>"; };
-		F9B36C7ED4B895107A230FA8A82EFDCC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB7AB7B3E9FF3340029F94FEB466FA07 /* Pods-KKPinCodeTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Tests-resources.sh"; sourceTree = "<group>"; };
+		037F7549086C673B341DFDE83534A50B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		054A3552879515A643722925A1876C0B /* KKPinCodeTextField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = KKPinCodeTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		05821148157E4534529C677938F59DE5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		10C2B9DD67DCBE90564CF60B8BDD0CC7 /* Pods-KKPinCodeTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKPinCodeTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		16F7E3ACD64E736212E932610617F30E /* KKPinCodeTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KKPinCodeTextField.xcconfig; sourceTree = "<group>"; };
+		1F102E86CA4471A96153CBC2368E9B7A /* Pods-KKPinCodeTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KKPinCodeTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		235B9248B299F9A6401DB3FF7D4C9F4F /* Pods-KKPinCodeTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKPinCodeTextField_Example.modulemap"; sourceTree = "<group>"; };
+		2A606C9ECB116C213C1F07F2A9D68D09 /* Pods-KKPinCodeTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKPinCodeTextField_Example-dummy.m"; sourceTree = "<group>"; };
+		2F4DC4D689A18EF552E356A43F40EEDD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58DB8B8742BFCA16429E10B15643BAC7 /* Pods-KKPinCodeTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPinCodeTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E604D9E54FEDD65EA78B4525B96FD53 /* KKPinCodeTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KKPinCodeTextField.modulemap; sourceTree = "<group>"; };
+		60F7EB17C002C1B608CE13B05954C296 /* KKPinCodeTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKPinCodeTextField-umbrella.h"; sourceTree = "<group>"; };
+		61A78BF115A61DA88A977200D36C0EA5 /* Pods-KKPinCodeTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F2EFD7E783966B608D9961154534E30 /* Pods-KKPinCodeTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Tests-resources.sh"; sourceTree = "<group>"; };
+		6FFD9259B8199E0684746977BE537A36 /* KKPinCodeTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KKPinCodeTextField-prefix.pch"; sourceTree = "<group>"; };
+		70204FE48063D7CFA303C5DAA2D23B4F /* Pods-KKPinCodeTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Example-resources.sh"; sourceTree = "<group>"; };
+		705FF610079A9A35EBBFB1CE0EA0AC5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A617CACFBD94D2DCFB6D96F3107749D /* Pods-KKPinCodeTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7F70712A12EACA4264E518E8B92A93B2 /* KKPinCodeTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KKPinCodeTextField.m; path = KKPinCodeTextField/Classes/KKPinCodeTextField.m; sourceTree = "<group>"; };
+		8852B1816151EC518C1B55E26C62928F /* KKPinCodeTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KKPinCodeTextField.framework; path = KKPinCodeTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		914859D1F01867F60E402CEB647809C8 /* Pods-KKPinCodeTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KKPinCodeTextField_Tests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		963BF1FA0511DE3652574AD90468DF7E /* Pods-KKPinCodeTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9C877466E8F26BD7F092319CF250F315 /* Pods-KKPinCodeTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KKPinCodeTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E31703A102C1B24D3FEBE21B01B8C22 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50A2A166948CB522A99470307A1A1D5 /* Pods_KKPinCodeTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKPinCodeTextField_Tests.framework; path = "Pods-KKPinCodeTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4043C78A1E6F2FADC1DE9C833C79264 /* Pods-KKPinCodeTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKPinCodeTextField_Example-umbrella.h"; sourceTree = "<group>"; };
+		B972F201B199154E07C0033C790925E9 /* Pods-KKPinCodeTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KKPinCodeTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		BD04695914C15C2C5C83409C28D34ACC /* Pods-KKPinCodeTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KKPinCodeTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		C1D702FD5F067FF4A4A602ECF2285B93 /* Pods-KKPinCodeTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KKPinCodeTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA98CD4C02BF16DC3A48A58541A6E84 /* Pods-KKPinCodeTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB867B43A0DDC7495BB31639EBBC020A /* KKPinCodeTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KKPinCodeTextField.h; path = KKPinCodeTextField/Classes/KKPinCodeTextField.h; sourceTree = "<group>"; };
+		E0E5A3781C1A3D4D33B1648F39EB2834 /* Pods_KKPinCodeTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KKPinCodeTextField_Example.framework; path = "Pods-KKPinCodeTextField_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E552C8EDD57E25854E1737A7C77E1D56 /* KKPinCodeTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KKPinCodeTextField-dummy.m"; sourceTree = "<group>"; };
+		F3E36936AB488DFFDD2164AD50FFA19A /* Pods-KKPinCodeTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KKPinCodeTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1D3BF73E5811483BD88435C97A36A9D1 /* Frameworks */ = {
+		68EC3D50457E82C0F252F3B78B63E152 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEEF5626D3EF5FA3134A6B266738C7F7 /* Foundation.framework in Frameworks */,
+				50E36D9C74A7CE4EE98EBD118B75568F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7781B06D941A4C115230CA4BD2E666DF /* Frameworks */ = {
+		C0309B02996051D016C11021154EC27F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CA054490D82DAB4283736E8ADAC600B /* Foundation.framework in Frameworks */,
+				E8CE3736913A6541B5B0E49EE599EC2F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F10ABF0D27F6F1C4B5B4606B5C29D63A /* Frameworks */ = {
+		D2EEF3E1CDE0D9A91CAC146895029EA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4814FB125C06E0B0FEF45F5AD1FD202 /* Foundation.framework in Frameworks */,
+				2E0260D4005EDCF0478278CFC6C633B2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		54B4C2D7F13E03FF109B3B747C5FF873 /* Support Files */ = {
+		16CBB612A157E46B31A0DD1EA7263AB5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C0E502A5679F41128E8C7B8C6C3887F /* Info.plist */,
-				5F943235A8C7DD02145D82778F2FE21D /* KKPinCodeTextField.modulemap */,
-				C8FB2F738D6CC6D6A58B81326E034E8C /* KKPinCodeTextField.xcconfig */,
-				3944A449A28FEC2571E00F03009C6E0A /* KKPinCodeTextField-dummy.m */,
-				091A4725F67872C9320D4D4EDB06CD26 /* KKPinCodeTextField-prefix.pch */,
-				8E1398B65B3E8AACF91CE250D2F109BA /* KKPinCodeTextField-umbrella.h */,
+				705FF610079A9A35EBBFB1CE0EA0AC5E /* Info.plist */,
+				5E604D9E54FEDD65EA78B4525B96FD53 /* KKPinCodeTextField.modulemap */,
+				16F7E3ACD64E736212E932610617F30E /* KKPinCodeTextField.xcconfig */,
+				E552C8EDD57E25854E1737A7C77E1D56 /* KKPinCodeTextField-dummy.m */,
+				6FFD9259B8199E0684746977BE537A36 /* KKPinCodeTextField-prefix.pch */,
+				60F7EB17C002C1B608CE13B05954C296 /* KKPinCodeTextField-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/KKPinCodeTextField";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		530DBB61203CFD11D7D2D17F8831D0CA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				054A3552879515A643722925A1876C0B /* KKPinCodeTextField.podspec */,
+				05821148157E4534529C677938F59DE5 /* LICENSE */,
+				037F7549086C673B341DFDE83534A50B /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		5EBB67A9B03793831C29D1C8D97A5578 /* Products */ = {
@@ -119,6 +144,36 @@
 				A50A2A166948CB522A99470307A1A1D5 /* Pods_KKPinCodeTextField_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6C5B93B6ECBB1DC590C2681B76024604 /* KKPinCodeTextField */ = {
+			isa = PBXGroup;
+			children = (
+				DB867B43A0DDC7495BB31639EBBC020A /* KKPinCodeTextField.h */,
+				7F70712A12EACA4264E518E8B92A93B2 /* KKPinCodeTextField.m */,
+				530DBB61203CFD11D7D2D17F8831D0CA /* Pod */,
+				16CBB612A157E46B31A0DD1EA7263AB5 /* Support Files */,
+			);
+			name = KKPinCodeTextField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6E242FE2CD731E343027CA87EFB4B7AA /* Pods-KKPinCodeTextField_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2F4DC4D689A18EF552E356A43F40EEDD /* Info.plist */,
+				235B9248B299F9A6401DB3FF7D4C9F4F /* Pods-KKPinCodeTextField_Example.modulemap */,
+				1F102E86CA4471A96153CBC2368E9B7A /* Pods-KKPinCodeTextField_Example-acknowledgements.markdown */,
+				58DB8B8742BFCA16429E10B15643BAC7 /* Pods-KKPinCodeTextField_Example-acknowledgements.plist */,
+				2A606C9ECB116C213C1F07F2A9D68D09 /* Pods-KKPinCodeTextField_Example-dummy.m */,
+				F3E36936AB488DFFDD2164AD50FFA19A /* Pods-KKPinCodeTextField_Example-frameworks.sh */,
+				70204FE48063D7CFA303C5DAA2D23B4F /* Pods-KKPinCodeTextField_Example-resources.sh */,
+				B4043C78A1E6F2FADC1DE9C833C79264 /* Pods-KKPinCodeTextField_Example-umbrella.h */,
+				C1D702FD5F067FF4A4A602ECF2285B93 /* Pods-KKPinCodeTextField_Example.debug.xcconfig */,
+				7A617CACFBD94D2DCFB6D96F3107749D /* Pods-KKPinCodeTextField_Example.release.xcconfig */,
+			);
+			name = "Pods-KKPinCodeTextField_Example";
+			path = "Target Support Files/Pods-KKPinCodeTextField_Example";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -135,69 +190,33 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C2FAD0C09F57C3463FD06378E4B6E7D7 /* Pods-KKPinCodeTextField_Example */ = {
+		CE926576A289AD3763E32D39308EEFB7 /* Pods-KKPinCodeTextField_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F9B36C7ED4B895107A230FA8A82EFDCC /* Info.plist */,
-				E49D0D3E6D115295A4EC280B0D41EAAE /* Pods-KKPinCodeTextField_Example.modulemap */,
-				0EAC6E49A72C8A6A3C6F8F4B96D6EDA5 /* Pods-KKPinCodeTextField_Example-acknowledgements.markdown */,
-				7C7C57444A47F4AECD5FD44BA93819BD /* Pods-KKPinCodeTextField_Example-acknowledgements.plist */,
-				30ECB0249D6160FEBC2F713E6E8DB85A /* Pods-KKPinCodeTextField_Example-dummy.m */,
-				0A38BF857816CE7B97DF2DA99ED8D434 /* Pods-KKPinCodeTextField_Example-frameworks.sh */,
-				9D8085FE0541F0D0C78CF5010CF90306 /* Pods-KKPinCodeTextField_Example-resources.sh */,
-				F1A85480E018855BE6D4EC9B33585F44 /* Pods-KKPinCodeTextField_Example-umbrella.h */,
-				8A457DBDCC8A90965F771E9D00E9AB04 /* Pods-KKPinCodeTextField_Example.debug.xcconfig */,
-				A7745398D71871DA3FF1E422AB9B6FA8 /* Pods-KKPinCodeTextField_Example.release.xcconfig */,
-			);
-			name = "Pods-KKPinCodeTextField_Example";
-			path = "Target Support Files/Pods-KKPinCodeTextField_Example";
-			sourceTree = "<group>";
-		};
-		CB960306AF59D2F48CCA8915BF043615 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4D17A8D06835A554F08F9B9573ADD21B /* KKPinCodeTextField.podspec */,
-				45FA1CDBA601BAE3D6E621BBC70BB193 /* LICENSE */,
-				5E31E00FF9DEBC514300E05995942A39 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		D24155A5911C81F3E445AC62CA1DB48A /* Pods-KKPinCodeTextField_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				7C98A559DB43DBD435CCE20084E98DBE /* Info.plist */,
-				66CB33A04F322F3DDB9C07A74F11531F /* Pods-KKPinCodeTextField_Tests.modulemap */,
-				2F293020DA76788B8FDB31ECCEDE15C8 /* Pods-KKPinCodeTextField_Tests-acknowledgements.markdown */,
-				C350B245B257DA7A875E959833445D1E /* Pods-KKPinCodeTextField_Tests-acknowledgements.plist */,
-				C68C2B6001F56500A3C6C616DE99E3B7 /* Pods-KKPinCodeTextField_Tests-dummy.m */,
-				27691EAA1CF6AB63F0AA526979A34DCB /* Pods-KKPinCodeTextField_Tests-frameworks.sh */,
-				FB7AB7B3E9FF3340029F94FEB466FA07 /* Pods-KKPinCodeTextField_Tests-resources.sh */,
-				6E585403498517F16EC0FA3DF1387633 /* Pods-KKPinCodeTextField_Tests-umbrella.h */,
-				D7EC2743910930086F180B3479B6AF9F /* Pods-KKPinCodeTextField_Tests.debug.xcconfig */,
-				28910FB4087596F1A3B32CE3F9280404 /* Pods-KKPinCodeTextField_Tests.release.xcconfig */,
+				9E31703A102C1B24D3FEBE21B01B8C22 /* Info.plist */,
+				BD04695914C15C2C5C83409C28D34ACC /* Pods-KKPinCodeTextField_Tests.modulemap */,
+				10C2B9DD67DCBE90564CF60B8BDD0CC7 /* Pods-KKPinCodeTextField_Tests-acknowledgements.markdown */,
+				9C877466E8F26BD7F092319CF250F315 /* Pods-KKPinCodeTextField_Tests-acknowledgements.plist */,
+				914859D1F01867F60E402CEB647809C8 /* Pods-KKPinCodeTextField_Tests-dummy.m */,
+				CDA98CD4C02BF16DC3A48A58541A6E84 /* Pods-KKPinCodeTextField_Tests-frameworks.sh */,
+				6F2EFD7E783966B608D9961154534E30 /* Pods-KKPinCodeTextField_Tests-resources.sh */,
+				B972F201B199154E07C0033C790925E9 /* Pods-KKPinCodeTextField_Tests-umbrella.h */,
+				61A78BF115A61DA88A977200D36C0EA5 /* Pods-KKPinCodeTextField_Tests.debug.xcconfig */,
+				963BF1FA0511DE3652574AD90468DF7E /* Pods-KKPinCodeTextField_Tests.release.xcconfig */,
 			);
 			name = "Pods-KKPinCodeTextField_Tests";
 			path = "Target Support Files/Pods-KKPinCodeTextField_Tests";
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		E1A4AB7214FA7C7719D0E18260DF1AD0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FEB77D4D353F8BFFB90563DB00F551D0 /* KKPinCodeTextField */,
+				6C5B93B6ECBB1DC590C2681B76024604 /* KKPinCodeTextField */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -205,97 +224,70 @@
 		F9B3903FDBA35B5A017F0D1326EB35EC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C2FAD0C09F57C3463FD06378E4B6E7D7 /* Pods-KKPinCodeTextField_Example */,
-				D24155A5911C81F3E445AC62CA1DB48A /* Pods-KKPinCodeTextField_Tests */,
+				6E242FE2CD731E343027CA87EFB4B7AA /* Pods-KKPinCodeTextField_Example */,
+				CE926576A289AD3763E32D39308EEFB7 /* Pods-KKPinCodeTextField_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		FEB77D4D353F8BFFB90563DB00F551D0 /* KKPinCodeTextField */ = {
-			isa = PBXGroup;
-			children = (
-				2B4697B2E5FDE9466EA3974B7C8339F9 /* KKPinCodeTextField.h */,
-				AF83CA3BEE9ABEEE8A8F22C89497BDB6 /* KKPinCodeTextField.m */,
-				CB960306AF59D2F48CCA8915BF043615 /* Pod */,
-				54B4C2D7F13E03FF109B3B747C5FF873 /* Support Files */,
-			);
-			name = KKPinCodeTextField;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		20705F1CAC119A38892E7BAD75979815 /* Headers */ = {
+		440ED0322379508A713EA0C882AF08E8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				128B50C3BA48E3790FC2E173DABC8819 /* Pods-KKPinCodeTextField_Tests-umbrella.h in Headers */,
+				B0396FAC16AD0B3DEAF0FD39313BEB62 /* Pods-KKPinCodeTextField_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4408334E90FA870C2D504CE2D2BE1BC /* Headers */ = {
+		DEF9795732E0A488B1264A591CF27D70 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CABD4B95B55CF10AC831978952A9FB1 /* KKPinCodeTextField.h in Headers */,
-				CFC9E71A7BAAF727E1A9B1D72E913D8F /* KKPinCodeTextField-umbrella.h in Headers */,
+				F33C38A4872B419296F71C3AC5474241 /* KKPinCodeTextField-umbrella.h in Headers */,
+				EB4A625841A6E61560A6F27639E68515 /* KKPinCodeTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB2E58542FF5467F89FCEAFE579D38DF /* Headers */ = {
+		EBBCD3F69A8214F0556E811C3DD39745 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB34F0F37963B7EEB16A6F3746F98FD8 /* Pods-KKPinCodeTextField_Example-umbrella.h in Headers */,
+				A827E80A9E443535977EC3DDAA51DCA5 /* Pods-KKPinCodeTextField_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		06B6EF8530B3CD512E5DFF697C2FD434 /* Pods-KKPinCodeTextField_Tests */ = {
+		191BCADBC1F7B121D1BE7FB96E04FD40 /* Pods-KKPinCodeTextField_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EE41B91EAFE1A361051DDA5DBC34099 /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Tests" */;
+			buildConfigurationList = 44538763B5700D1CA162B3CA436F93D4 /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Example" */;
 			buildPhases = (
-				8C93BA8CBFD593AEF5643D302592AB2F /* Sources */,
-				7781B06D941A4C115230CA4BD2E666DF /* Frameworks */,
-				20705F1CAC119A38892E7BAD75979815 /* Headers */,
+				EBBCD3F69A8214F0556E811C3DD39745 /* Headers */,
+				6AE92C58BFD8EBABE1F811B972BB52F2 /* Sources */,
+				68EC3D50457E82C0F252F3B78B63E152 /* Frameworks */,
+				66514385AC9D709EFA2F2CC478196B96 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-KKPinCodeTextField_Tests";
-			productName = "Pods-KKPinCodeTextField_Tests";
-			productReference = A50A2A166948CB522A99470307A1A1D5 /* Pods_KKPinCodeTextField_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		252DBF378EC912959DBEF7FEFDC2562E /* Pods-KKPinCodeTextField_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C74D1D0642CF0359EA35A38287A4700A /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Example" */;
-			buildPhases = (
-				43972413DEE7911F06193AA18F336146 /* Sources */,
-				1D3BF73E5811483BD88435C97A36A9D1 /* Frameworks */,
-				EB2E58542FF5467F89FCEAFE579D38DF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78B7397F3C935CD1B27463DA9020BE82 /* PBXTargetDependency */,
+				EAB626729FE3A82B8F02E3305BEC6511 /* PBXTargetDependency */,
 			);
 			name = "Pods-KKPinCodeTextField_Example";
 			productName = "Pods-KKPinCodeTextField_Example";
 			productReference = E0E5A3781C1A3D4D33B1648F39EB2834 /* Pods_KKPinCodeTextField_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F57B34529C51F913C582035C49C0AA7F /* KKPinCodeTextField */ = {
+		6144B865869576FB75039525DB479A7E /* KKPinCodeTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 47C1B87A87ADADD725BA38E324B9B6DA /* Build configuration list for PBXNativeTarget "KKPinCodeTextField" */;
+			buildConfigurationList = 39A0013F79B2C9F8A7CAD81E73665F32 /* Build configuration list for PBXNativeTarget "KKPinCodeTextField" */;
 			buildPhases = (
-				C308E85404163581997571237CA6528E /* Sources */,
-				F10ABF0D27F6F1C4B5B4606B5C29D63A /* Frameworks */,
-				D4408334E90FA870C2D504CE2D2BE1BC /* Headers */,
+				DEF9795732E0A488B1264A591CF27D70 /* Headers */,
+				D2BA0AB693B90CB4E9660DB33CA4D944 /* Sources */,
+				D2EEF3E1CDE0D9A91CAC146895029EA3 /* Frameworks */,
+				12ACCCC720BB9010BC6BC0E16A46FDB3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -306,14 +298,33 @@
 			productReference = 8852B1816151EC518C1B55E26C62928F /* KKPinCodeTextField.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		6294C478BA420EBA5E0052887DCE03C2 /* Pods-KKPinCodeTextField_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CF1B9D4CCDB318E87080CB9FA5E3CC1 /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Tests" */;
+			buildPhases = (
+				440ED0322379508A713EA0C882AF08E8 /* Headers */,
+				721F5530CEFA7B6E9FADF16C03A375E6 /* Sources */,
+				C0309B02996051D016C11021154EC27F /* Frameworks */,
+				28CF711A57336E430E4668DA2F21BFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F0F378AEAD8D72F420B142248872296 /* PBXTargetDependency */,
+			);
+			name = "Pods-KKPinCodeTextField_Tests";
+			productName = "Pods-KKPinCodeTextField_Tests";
+			productReference = A50A2A166948CB522A99470307A1A1D5 /* Pods_KKPinCodeTextField_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -327,55 +338,86 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F57B34529C51F913C582035C49C0AA7F /* KKPinCodeTextField */,
-				252DBF378EC912959DBEF7FEFDC2562E /* Pods-KKPinCodeTextField_Example */,
-				06B6EF8530B3CD512E5DFF697C2FD434 /* Pods-KKPinCodeTextField_Tests */,
+				6144B865869576FB75039525DB479A7E /* KKPinCodeTextField */,
+				191BCADBC1F7B121D1BE7FB96E04FD40 /* Pods-KKPinCodeTextField_Example */,
+				6294C478BA420EBA5E0052887DCE03C2 /* Pods-KKPinCodeTextField_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		12ACCCC720BB9010BC6BC0E16A46FDB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CF711A57336E430E4668DA2F21BFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66514385AC9D709EFA2F2CC478196B96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		43972413DEE7911F06193AA18F336146 /* Sources */ = {
+		6AE92C58BFD8EBABE1F811B972BB52F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B44CE7D79929402C723D8D7A1AA0A4 /* Pods-KKPinCodeTextField_Example-dummy.m in Sources */,
+				55703BCC5B914CC7DBF15C0D86BC6E71 /* Pods-KKPinCodeTextField_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C93BA8CBFD593AEF5643D302592AB2F /* Sources */ = {
+		721F5530CEFA7B6E9FADF16C03A375E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30AA9DF2EC78C1A576B30C53DD02AE7D /* Pods-KKPinCodeTextField_Tests-dummy.m in Sources */,
+				3828F35079486E7407D757CB700E526F /* Pods-KKPinCodeTextField_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C308E85404163581997571237CA6528E /* Sources */ = {
+		D2BA0AB693B90CB4E9660DB33CA4D944 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF0EC4E5DB8ADCDB4115AC110EB19AD /* KKPinCodeTextField.m in Sources */,
-				CEFC0927603CB0727616C1FF550DC391 /* KKPinCodeTextField-dummy.m in Sources */,
+				2E6A410100BB1C582AE5A3B4E020F1B9 /* KKPinCodeTextField-dummy.m in Sources */,
+				CF28E6F87A4F2917ACE05600666990DC /* KKPinCodeTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		78B7397F3C935CD1B27463DA9020BE82 /* PBXTargetDependency */ = {
+		4F0F378AEAD8D72F420B142248872296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-KKPinCodeTextField_Example";
+			target = 191BCADBC1F7B121D1BE7FB96E04FD40 /* Pods-KKPinCodeTextField_Example */;
+			targetProxy = B7214E9979397B15706B4DDF57A80588 /* PBXContainerItemProxy */;
+		};
+		EAB626729FE3A82B8F02E3305BEC6511 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KKPinCodeTextField;
-			target = F57B34529C51F913C582035C49C0AA7F /* KKPinCodeTextField */;
-			targetProxy = F9EE3DAA4D1C14BBF464708BC25ACF45 /* PBXContainerItemProxy */;
+			target = 6144B865869576FB75039525DB479A7E /* KKPinCodeTextField */;
+			targetProxy = 65AC009AED2D220E738893E0AB018849 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11E6FCB480B3C43F33B2DB4C86FD11B1 /* Debug */ = {
+		16A81F8E99E5FBC0C7965458DB9C5C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7EC2743910930086F180B3479B6AF9F /* Pods-KKPinCodeTextField_Tests.debug.xcconfig */;
+			baseConfigurationReference = 61A78BF115A61DA88A977200D36C0EA5 /* Pods-KKPinCodeTextField_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -387,7 +429,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-KKPinCodeTextField_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-KKPinCodeTextField_Tests/Pods-KKPinCodeTextField_Tests.modulemap";
@@ -395,7 +437,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KKPinCodeTextField_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,10 +446,75 @@
 			};
 			name = Debug;
 		};
-		23926FD6079098952E16A9A2C36C9BB1 /* Release */ = {
+		4B219644B4FA7EF4E7429EE9DDCC22CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28910FB4087596F1A3B32CE3F9280404 /* Pods-KKPinCodeTextField_Tests.release.xcconfig */;
+			baseConfigurationReference = C1D702FD5F067FF4A4A602ECF2285B93 /* Pods-KKPinCodeTextField_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KKPinCodeTextField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KKPinCodeTextField_Example/Pods-KKPinCodeTextField_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		555C7AA80FBCEC25234EC1907C4D2E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F7E3ACD64E736212E932610617F30E /* KKPinCodeTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KKPinCodeTextField/KKPinCodeTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KKPinCodeTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KKPinCodeTextField/KKPinCodeTextField.modulemap";
+				PRODUCT_MODULE_NAME = KKPinCodeTextField;
+				PRODUCT_NAME = KKPinCodeTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60CAAE7F3FAA75A9FA328F1C32EAF030 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 963BF1FA0511DE3652574AD90468DF7E /* Pods-KKPinCodeTextField_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -419,7 +526,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-KKPinCodeTextField_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-KKPinCodeTextField_Tests/Pods-KKPinCodeTextField_Tests.modulemap";
@@ -427,7 +534,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KKPinCodeTextField_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -437,7 +544,7 @@
 			};
 			name = Release;
 		};
-		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+		85B95B1234E227C814CCC2C7902D0916 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -447,10 +554,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -458,6 +567,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -466,6 +576,69 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A73625DEBD810B78234FA1958C191C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -486,21 +659,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		61E5896F4FB80907EFADF71CF83CAA84 /* Release */ = {
+		C3356ECFEDAAC2765A01B0A82A788D67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7745398D71871DA3FF1E422AB9B6FA8 /* Pods-KKPinCodeTextField_Example.release.xcconfig */;
+			baseConfigurationReference = 7A617CACFBD94D2DCFB6D96F3107749D /* Pods-KKPinCodeTextField_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -512,7 +688,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-KKPinCodeTextField_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-KKPinCodeTextField_Example/Pods-KKPinCodeTextField_Example.modulemap";
@@ -520,7 +696,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KKPinCodeTextField_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -530,64 +706,9 @@
 			};
 			name = Release;
 		};
-		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+		C48E8BDD256A7C49BE99B3963F710CA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B16BE09578AC35571D108F6981D00615 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8FB2F738D6CC6D6A58B81326E034E8C /* KKPinCodeTextField.xcconfig */;
+			baseConfigurationReference = 16F7E3ACD64E736212E932610617F30E /* KKPinCodeTextField.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -604,72 +725,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/KKPinCodeTextField/KKPinCodeTextField.modulemap";
+				PRODUCT_MODULE_NAME = KKPinCodeTextField;
 				PRODUCT_NAME = KKPinCodeTextField;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CE9D89C2D9ADB89CC435D2A864768D2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8FB2F738D6CC6D6A58B81326E034E8C /* KKPinCodeTextField.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/KKPinCodeTextField/KKPinCodeTextField-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/KKPinCodeTextField/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/KKPinCodeTextField/KKPinCodeTextField.modulemap";
-				PRODUCT_NAME = KKPinCodeTextField;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D9BC9D5E8361E70F73205E1D832C4B6D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A457DBDCC8A90965F771E9D00E9AB04 /* Pods-KKPinCodeTextField_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KKPinCodeTextField_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KKPinCodeTextField_Example/Pods-KKPinCodeTextField_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_KKPinCodeTextField_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -682,35 +742,35 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
-				731DC216E1A58545B559F6E0A2418060 /* Release */,
+				A73625DEBD810B78234FA1958C191C8C /* Debug */,
+				85B95B1234E227C814CCC2C7902D0916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		47C1B87A87ADADD725BA38E324B9B6DA /* Build configuration list for PBXNativeTarget "KKPinCodeTextField" */ = {
+		39A0013F79B2C9F8A7CAD81E73665F32 /* Build configuration list for PBXNativeTarget "KKPinCodeTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE9D89C2D9ADB89CC435D2A864768D2C /* Debug */,
-				B16BE09578AC35571D108F6981D00615 /* Release */,
+				C48E8BDD256A7C49BE99B3963F710CA8 /* Debug */,
+				555C7AA80FBCEC25234EC1907C4D2E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EE41B91EAFE1A361051DDA5DBC34099 /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Tests" */ = {
+		44538763B5700D1CA162B3CA436F93D4 /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				11E6FCB480B3C43F33B2DB4C86FD11B1 /* Debug */,
-				23926FD6079098952E16A9A2C36C9BB1 /* Release */,
+				4B219644B4FA7EF4E7429EE9DDCC22CC /* Debug */,
+				C3356ECFEDAAC2765A01B0A82A788D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C74D1D0642CF0359EA35A38287A4700A /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Example" */ = {
+		5CF1B9D4CCDB318E87080CB9FA5E3CC1 /* Build configuration list for PBXNativeTarget "Pods-KKPinCodeTextField_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9BC9D5E8361E70F73205E1D832C4B6D /* Debug */,
-				61E5896F4FB80907EFADF71CF83CAA84 /* Release */,
+				16A81F8E99E5FBC0C7965458DB9C5C7E /* Debug */,
+				60CAAE7F3FAA75A9FA328F1C32EAF030 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
