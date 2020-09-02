@@ -2,7 +2,7 @@
 //  KKPinCodeTextField.m
 //  KolesaKz
 //
-//  Created by Amirzhan on 30.06.17.
+//  Created by Amirzhan on 30.06.17.ios
 //  Copyright © 2017 Eugene Valeyev. All rights reserved.
 //
 #import "KKPinCodeTextField.h"
