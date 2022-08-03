@@ -13,7 +13,7 @@ static const CGFloat KKDefaultBorderHeight = 4;
 static const CGFloat KKDefaultBordersSpacing = 10;
 @interface KKPinCodeTextField() <UITextFieldDelegate>
 @property (strong, nonatomic) NSMutableArray <CALayer *> *borders;
-@property (strong, nonatomic) NSMutableArray <CALayer *> *backgrounds;
+//@property (strong, nonatomic) NSMutableArray <CALayer *> *backgrounds;
 @end
 @implementation KKPinCodeTextField
 @synthesize digitsCount = _digitsCount;
@@ -38,7 +38,7 @@ static const CGFloat KKDefaultBordersSpacing = 10;
 }
 - (void)setup {
     [self setupBorders];
-    [self setupBackgrounds];
+//    [self setupBackgrounds];
     [self configureDefaultValues];
     [self addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
 }
@@ -59,22 +59,22 @@ static const CGFloat KKDefaultBordersSpacing = 10;
         [self.layer addSublayer:border];
     }
 }
-- (void)setupBackgrounds {
-    for (CALayer *border in self.backgrounds) {
-        [border removeFromSuperlayer];
-    }
-    self.backgrounds = [NSMutableArray new];
-    for (int i = 0; i < self.digitsCount; i++) {
-        CALayer *background = [CALayer layer];
-        if (i == 0){
-            background.backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
-        }else{
-            background.backgroundColor = UIColor.clearColor.CGColor;
-        }
-        [self.backgrounds addObject:background];
-        [self.layer addSublayer:background];
-    }
-}
+//- (void)setupBackgrounds {
+//    for (CALayer *border in self.backgrounds) {
+//        [border removeFromSuperlayer];
+//    }
+//    self.backgrounds = [NSMutableArray new];
+//    for (int i = 0; i < self.digitsCount; i++) {
+//        CALayer *background = [CALayer layer];
+//        if (i == 0){
+//            background.backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
+//        }else{
+//            background.backgroundColor = UIColor.clearColor.CGColor;
+//        }
+//        [self.backgrounds addObject:background];
+//        [self.layer addSublayer:background];
+//    }
+//}
 - (void)configureDefaultValues {
     self.delegate = self;
     self.adjustsFontSizeToFitWidth = NO;
@@ -87,10 +87,10 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     [super layoutSubviews];
     for (int i = 0; i < self.borders.count; i++) {
         CALayer *border = self.borders[i];
-        CALayer *background = self.backgrounds[i];
+//        CALayer *background = self.backgrounds[i];
         CGFloat xPos = ([self borderWidth] + self.bordersSpacing) * i + KKTextFieldPadding;
-        border.frame = CGRectMake(xPos, CGRectGetHeight(self.frame) - self.borderHeight, [self borderWidth], self.borderHeight);
-        background.frame = CGRectMake(xPos, 0, [self borderWidth], CGRectGetHeight(self.frame) - self.borderHeight);
+        border.frame = CGRectMake(xPos, 0, [self borderWidth], CGRectGetHeight(self.frame) - self.borderHeight);
+        border.cornerRadius = 12;
     }
 }
 - (CGSize)intrinsicContentSize {
@@ -109,10 +109,10 @@ static const CGFloat KKDefaultBordersSpacing = 10;
         CALayer *border = self.borders[i];
         if (i == 0){
             border.borderColor = self.filledDigitBorderColor.CGColor;
-            self.backgrounds[i].backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
+//            self.backgrounds[i].backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
         }else{
             border.borderColor = self.emptyDigitBorderColor.CGColor;
-            self.backgrounds[i].backgroundColor = UIColor.clearColor.CGColor;
+//            self.backgrounds[i].backgroundColor = UIColor.clearColor.CGColor;
         }
     }
     [self configureInitialSpacingAtIndex:0];
@@ -140,10 +140,10 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     for (int i=0; i< [_borders count]; i++){
         if (i < index || i > index){
             self.borders[i].borderColor = self.emptyDigitBorderColor.CGColor;
-            self.backgrounds[i].backgroundColor = UIColor.clearColor.CGColor;
+//            self.backgrounds[i].backgroundColor = UIColor.clearColor.CGColor;
         }else{
             self.borders[index].borderColor = self.filledDigitBorderColor.CGColor;
-            self.backgrounds[index].backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
+//            self.backgrounds[index].backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
         }
     }
 }
@@ -194,7 +194,7 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     _digitsCount = digitsCount;
     [self clearText];
     [self setupBorders];
-    [self setupBackgrounds];
+//    [self setupBackgrounds];
 }
 - (CGFloat)borderHeight {
     if (!_borderHeight) {
@@ -206,7 +206,7 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     _borderHeight = borderHeight;
     [self clearText];
     [self setupBorders];
-    [self setupBackgrounds];
+//    [self setupBackgrounds];
 }
 - (CGFloat)bordersSpacing {
     if (!_bordersSpacing) {
@@ -273,7 +273,7 @@ static const CGFloat KKDefaultBordersSpacing = 10;
         NSUInteger count = [self.borders indexOfObject:border];
         BOOL isFilled = self.text.length > count;
         border.borderColor = isFilled ? self.filledDigitBorderColor.CGColor : self.emptyDigitBorderColor.CGColor;
-        self.backgrounds[count].backgroundColor = isFilled ? [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor : UIColor.clearColor.CGColor;
+//        self.backgrounds[count].backgroundColor = isFilled ? [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor : UIColor.clearColor.CGColor;
     }
 }
 @end
