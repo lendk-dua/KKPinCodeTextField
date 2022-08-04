@@ -276,4 +276,8 @@ static const CGFloat KKDefaultBordersSpacing = 10;
 //        self.backgrounds[count].backgroundColor = isFilled ? [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor : UIColor.clearColor.CGColor;
     }
 }
+- (void) traitCollectionDidChange: (UITraitCollection *) previousTraitCollection {
+    [super traitCollectionDidChange: previousTraitCollection];
+    [self setupBorders];
+}
 @end
