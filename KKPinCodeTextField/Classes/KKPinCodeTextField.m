@@ -155,6 +155,8 @@ static const CGFloat KKDefaultBordersSpacing = 10;
         CGFloat textWidth = [self.text sizeWithAttributes: userAttributes].width;
         CGFloat spacing = ([self borderWidth] - textWidth) / 2 + KKTextFieldPadding;
         [self addInitialSpacing:spacing];
+    } else if (index == self.digitsCount) {
+        [self addInitialSpacing:35.5];
     }
 }
 - (void)addSpacingToTextWithLength:(NSUInteger)length {
