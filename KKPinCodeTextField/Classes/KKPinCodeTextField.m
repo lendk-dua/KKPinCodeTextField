@@ -8,7 +8,7 @@
 #import "KKPinCodeTextField.h"
 static const CGFloat KKTextFieldPadding = 20;
 static const CGFloat KKDigitToBorderSpace = 10;
-static const NSUInteger KKDefaultDigitsCount = 4;
+static const NSUInteger KKDefaultDigitsCount = 6;
 static const CGFloat KKDefaultBorderHeight = 4;
 static const CGFloat KKDefaultBordersSpacing = 10;
 @interface KKPinCodeTextField() <UITextFieldDelegate>
@@ -38,56 +38,55 @@ static const CGFloat KKDefaultBordersSpacing = 10;
 }
 - (void)setup {
     [self setupBorders];
-//    [self setupBackgrounds];
+    //    [self setupBackgrounds];
     [self configureDefaultValues];
     [self addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
 }
 - (void)setupBorders {
+    BOOL isRTL = [self isRightToLeft];
+    NSUInteger highlightIndex = isRTL ? self.digitsCount - 1 : 0;
+
+    // Remove existing borders
     for (CALayer *border in self.borders) {
         [border removeFromSuperlayer];
     }
+
+    // Create new borders and highlight the first/last based on RTL or LTR
     self.borders = [NSMutableArray new];
-    for (int i = 0; i < self.digitsCount; i++) {
+    for (NSUInteger i = 0; i < self.digitsCount; i++) {
         CALayer *border = [CALayer layer];
-        if (i == 0){
+        border.borderWidth = self.borderHeight;
+        
+        // Highlight the first border in LTR and the last border in RTL
+        if (i == highlightIndex) {
             border.borderColor = self.filledDigitBorderColor.CGColor;
-        }else{
+        } else {
             border.borderColor = self.emptyDigitBorderColor.CGColor;
         }
-        border.borderWidth = self.borderHeight;
+
         [self.borders addObject:border];
         [self.layer addSublayer:border];
     }
 }
-//- (void)setupBackgrounds {
-//    for (CALayer *border in self.backgrounds) {
-//        [border removeFromSuperlayer];
-//    }
-//    self.backgrounds = [NSMutableArray new];
-//    for (int i = 0; i < self.digitsCount; i++) {
-//        CALayer *background = [CALayer layer];
-//        if (i == 0){
-//            background.backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
-//        }else{
-//            background.backgroundColor = UIColor.clearColor.CGColor;
-//        }
-//        [self.backgrounds addObject:background];
-//        [self.layer addSublayer:background];
-//    }
-//}
+- (void)updateBorderColor {
+    [self configureBorderColorAtIndex:self.text.length];
+}
 - (void)configureDefaultValues {
     self.delegate = self;
     self.adjustsFontSizeToFitWidth = NO;
     self.keyboardType = UIKeyboardTypeNumberPad;
-    self.textAlignment = NSTextAlignmentLeft;
+    self.textAlignment = NSTextAlignmentCenter;
     self.borderStyle = UITextBorderStyleNone;
+}
+- (BOOL)isRightToLeft {
+    return [UIView userInterfaceLayoutDirectionForSemanticContentAttribute:self.semanticContentAttribute] == UIUserInterfaceLayoutDirectionRightToLeft;
 }
 #pragma mark Overriden methods
 - (void)layoutSubviews {
     [super layoutSubviews];
     for (int i = 0; i < self.borders.count; i++) {
         CALayer *border = self.borders[i];
-//        CALayer *background = self.backgrounds[i];
+        //        CALayer *background = self.backgrounds[i];
         CGFloat xPos = ([self borderWidth] + self.bordersSpacing) * i + KKTextFieldPadding;
         border.frame = CGRectMake(xPos, 0, [self borderWidth], CGRectGetHeight(self.frame) - self.borderHeight);
         border.cornerRadius = 12;
@@ -109,10 +108,8 @@ static const CGFloat KKDefaultBordersSpacing = 10;
         CALayer *border = self.borders[i];
         if (i == 0){
             border.borderColor = self.filledDigitBorderColor.CGColor;
-//            self.backgrounds[i].backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
         }else{
             border.borderColor = self.emptyDigitBorderColor.CGColor;
-//            self.backgrounds[i].backgroundColor = UIColor.clearColor.CGColor;
         }
     }
     [self configureInitialSpacingAtIndex:0];
@@ -137,17 +134,24 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     [self addSpacingToTextWithLength:length];
 }
 - (void)configureBorderColorAtIndex:(NSUInteger)index {
-    for (int i=0; i< [_borders count]; i++){
-        if (i < index || i > index){
-            self.borders[i].borderColor = self.emptyDigitBorderColor.CGColor;
-//            self.backgrounds[i].backgroundColor = UIColor.clearColor.CGColor;
-        }else{
-            self.borders[index].borderColor = self.filledDigitBorderColor.CGColor;
-//            self.backgrounds[index].backgroundColor = [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor;
+    BOOL isRTL = [self isRightToLeft];
+    NSUInteger count = [_borders count];
+    
+    for (NSUInteger i = 0; i < count; i++) {
+        CALayer *border = self.borders[i];
+        NSUInteger adjustedIndex = isRTL ? (count - 1 - i) : i;
+
+        // Highlight the next empty digit's border
+        if (adjustedIndex == index) {
+            border.borderColor = self.filledDigitBorderColor.CGColor;
+        } else {
+            border.borderColor = self.emptyDigitBorderColor.CGColor;
         }
     }
 }
 - (void)configureInitialSpacingAtIndex:(NSUInteger)index {
+    NSTextAlignment alignment = [self isRightToLeft] ? NSTextAlignmentRight : NSTextAlignmentLeft;
+    self.textAlignment = alignment;
     if (index == 0) {
         [self addInitialSpacing:KKTextFieldPadding];
     } else if (index == 1) {
@@ -161,22 +165,41 @@ static const CGFloat KKDefaultBordersSpacing = 10;
 }
 - (void)addSpacingToTextWithLength:(NSUInteger)length {
     if (length == 0) {
+        self.attributedText = [[NSAttributedString alloc] initWithString:@""];
         return;
     }
-    for (int i=1; i <= length; i++){
-        NSMutableAttributedString *attributedString = [self.attributedText mutableCopy];
-        BOOL isLastDigit = i == self.digitsCount;
-        CGFloat nextBorderSpacing = isLastDigit ? 0 : self.bordersSpacing;
-        CGFloat lastSpacing = [self spacingToDigitAtIndex:i - 1 attributedText:attributedString];
-        CGFloat spacing = lastSpacing + nextBorderSpacing;
-        [attributedString addAttribute:NSKernAttributeName value:@(spacing) range:NSMakeRange(i - 1, 1)];
-        if (i > 1) {
-            CGFloat preLastSpacing = [self spacingToDigitAtIndex:i - 2 attributedText:attributedString];
-            CGFloat spacing = preLastSpacing + lastSpacing + self.bordersSpacing;
-            [attributedString addAttribute:NSKernAttributeName value:@(spacing) range:NSMakeRange(i - 2, 1)];
+    
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.text attributes:@{NSFontAttributeName: self.font}];
+    
+    CGFloat totalCellWidth = [self borderWidth] + self.bordersSpacing;
+    
+    for (NSUInteger i = 0; i < length; i++) {
+        CGFloat charWidth = [self widthForCharacterAtIndex:i inString:self.text];
+        CGFloat nextCharWidth = i < length - 1 ? [self widthForCharacterAtIndex:i + 1 inString:self.text] : 0;
+        CGFloat spacing = (totalCellWidth - charWidth) / 2 + (totalCellWidth - nextCharWidth) / 2;
+        
+        if (i < length - 1) {
+            [attributedString addAttribute:NSKernAttributeName value:@(spacing) range:NSMakeRange(i, 1)];
         }
-        self.attributedText = [attributedString copy];
     }
+    
+    self.attributedText = attributedString;
+}
+- (CGFloat)widthForCharacterAtIndex:(NSUInteger)index inString:(NSString *)string {
+    if (index >= string.length) return 0;
+    
+    NSRange range = NSMakeRange(index, 1);
+    NSString *character = [string substringWithRange:range];
+    NSDictionary *attributes = @{NSFontAttributeName: self.font};
+    CGSize size = [character sizeWithAttributes:attributes];
+    
+    return size.width;
+}
+- (CGFloat)widthForSingleCharacter {
+    NSDictionary *userAttributes = @{NSFontAttributeName: self.font};
+    NSString *singleChar = @"0";
+    CGSize size = [singleChar sizeWithAttributes:userAttributes];
+    return size.width;
 }
 - (CGFloat)spacingToDigitAtIndex:(NSUInteger)index attributedText:(NSMutableAttributedString *)attributedString {
     NSDictionary *userAttributes = @{NSFontAttributeName: self.font};
@@ -196,7 +219,6 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     _digitsCount = digitsCount;
     [self clearText];
     [self setupBorders];
-//    [self setupBackgrounds];
 }
 - (CGFloat)borderHeight {
     if (!_borderHeight) {
@@ -208,7 +230,6 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     _borderHeight = borderHeight;
     [self clearText];
     [self setupBorders];
-//    [self setupBackgrounds];
 }
 - (CGFloat)bordersSpacing {
     if (!_bordersSpacing) {
@@ -251,7 +272,11 @@ static const CGFloat KKDefaultBordersSpacing = 10;
     super.keyboardType = UIKeyboardTypeNumberPad;
 }
 - (void)setTextAlignment:(NSTextAlignment)textAlignment {
-    super.textAlignment = NSTextAlignmentLeft;
+    if ([self isRightToLeft]) {
+        super.textAlignment = NSTextAlignmentRight;
+    } else {
+        super.textAlignment = NSTextAlignmentLeft;
+    }
 }
 - (void)setBorderStyle:(UITextBorderStyle)borderStyle {
     super.borderStyle = UITextBorderStyleNone;
@@ -275,11 +300,15 @@ static const CGFloat KKDefaultBordersSpacing = 10;
         NSUInteger count = [self.borders indexOfObject:border];
         BOOL isFilled = self.text.length > count;
         border.borderColor = isFilled ? self.filledDigitBorderColor.CGColor : self.emptyDigitBorderColor.CGColor;
-//        self.backgrounds[count].backgroundColor = isFilled ? [self.filledDigitBorderColor colorWithAlphaComponent:0.1].CGColor : UIColor.clearColor.CGColor;
     }
 }
-- (void) traitCollectionDidChange: (UITraitCollection *) previousTraitCollection {
-    [super traitCollectionDidChange: previousTraitCollection];
-    [self setupBorders];
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
+    
+    if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
+        [self setupBorders];
+        
+        [self configureBorderColorAtIndex:self.text.length];
+    }
 }
 @end

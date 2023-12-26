@@ -30,5 +30,6 @@ IB_DESIGNABLE
 
 /// Clears all text
 - (void)clearText;
+- (void)updateBorderColor;
 
 @end
